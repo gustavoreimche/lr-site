@@ -11,31 +11,25 @@ export class PerguntasFrequentesComponent {
       title: 'ONDE RECEBEREI O TREINAMENTO?',
       content:
         'Você receberá o acesso a nossa área de membros exclusivas para as alunas no e-mail usado pra compra, através da plataforma da Hotmart',
-      isOpen: false,
+      isOpen: true,
     },
     {
       title: 'QUAIS AS FORMAS DE PAGAMENTO?',
       content:
-        'Todas as formas de pagamento disponíveis pela Hotmar, INCLUSIVE INTERNACIONAL Todas as formas são amplamente seguras e garantem acesso instantâneo ao treinamento.',
-      isOpen: false,
+        'Todas as formas de pagamento disponíveis pela Hotmart, INCLUSIVE INTERNACIONAL Todas as formas são amplamente seguras e garantem acesso instantâneo ao treinamento.',
+      isOpen: true,
     },
     {
       title: 'DURANTE QUANTO TEMPO PODEREI ASSISTIR O TREINAMENTO?',
       content:
-        'O treinamento ficará disponível por 12 meses. O que é tempo suficiente para estudar, aplicar e ter resultados.',
-      isOpen: false,
-    },
-    {
-      title: 'CASO QUEIRA, COMO FUNCIONA A GARANTIA?',
-      content:
-        'Se em 7 dias você quiser o seu reembolso, basta me enviar uma mensagem que eu devolverei todo seu dinheiro, sem nenhuma burocracia ou questionamento.',
-      isOpen: false,
+        'O treinamento ficará disponível por 8 meses. O que é tempo suficiente para estudar, aplicar e ter resultados.',
+      isOpen: true,
     },
     {
       title: 'TEREI ALGUM TIPO DE SUPORTE?',
       content:
         'Sim! Dentro da plataforma, você pode enviar suas dúvidas e elas serão respondidas. Temos também um grupo de alunas no Telegram, onde você poderá interagir e tirar suas dúvidas.',
-      isOpen: false,
+      isOpen: true,
     },
   ];
 
