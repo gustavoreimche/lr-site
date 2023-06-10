@@ -39,6 +39,12 @@ export class InscricaoComponent {
 
   async onSubmit(event: Event) {
     const result = await this.add();
+    alert('Inscrição realizada com sucesso!');
     console.log(result.id);
+    this.inscricao = {
+      name: '',
+      email: '',
+      phone: '',
+    };
   }
 }
