@@ -1,0 +1,19 @@
+<div class="container mt-20 bg-pink-800/40 py-3 rounded-lg">
+
+  <div class="flex flex-col mt-10 mb-10 fw-medium">
+
+    <span class="fs-1 fw-bold text-center">DÚVIDAS FREQUENTES</span>
+  </div>
+  <div>
+    <div class="accordion-item" *ngFor="let item of accordionItems; let i = index">
+      <div class="accordion-header fw-bold fs-5" [ngClass]="{ 'text-pink-800' :item.isOpen}"
+        (click)="toggleAccordion(i)">
+        {{ item.title }}
+      </div>
+      <div class="accordion-content ml-3 fs-5" [ngClass]="{ 'open': item.isOpen }">
+        {{ item.content }}
+      </div>
+    </div>
+  </div>
+
+</div>

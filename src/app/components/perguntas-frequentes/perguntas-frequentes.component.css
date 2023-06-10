@@ -1,0 +1,19 @@
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  background-color: none;
+  padding: 10px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.accordion-content.open {
+  max-height: 200px; /* Defina a altura máxima desejada para o conteúdo */
+}

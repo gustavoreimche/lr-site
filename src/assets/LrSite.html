@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4200/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>LrSite</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<link rel="stylesheet" href="./LrSite_files/styles.css"><style>/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyJ9 */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBLDRKQUE0SiIsInNvdXJjZVJvb3QiOiIifQ== */</style><style>.banner[_ngcontent-ng-c4078099929] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
+  margin-bottom: 50px;
+}
+
+#foto[_ngcontent-ng-c4078099929] {
+  max-width: 45%;
+}
+
+#title[_ngcontent-ng-c4078099929] {
+  margin-top: -200px;
+  max-width: 80%;
+}
+
+#pag[_ngcontent-ng-c4078099929] {
+  max-width: 50%;
+}
+
+.my-button[_ngcontent-ng-c4078099929] {
+  border-radius: 20px;
+  border: none;
+  background-color: #cb00c5;
+}
+
+@media (max-width: 600px) {
+  #title[_ngcontent-ng-c4078099929] {
+    margin-top: -100px;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhbm5lci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixtQkFBbUI7RUFDbkIsU0FBUztFQUNULGVBQWU7RUFDZixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLFlBQVk7RUFDWix5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRTtJQUNFLGtCQUFrQjtFQUNwQjtBQUNGIiwiZmlsZSI6ImJhbm5lci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJhbm5lciB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgZ2FwOiAzMHB4O1xyXG4gIHBhZGRpbmc6IDMwcHggMDtcclxuICBtYXJnaW4tYm90dG9tOiA1MHB4O1xyXG59XHJcblxyXG4jZm90byB7XHJcbiAgbWF4LXdpZHRoOiA0NSU7XHJcbn1cclxuXHJcbiN0aXRsZSB7XHJcbiAgbWFyZ2luLXRvcDogLTIwMHB4O1xyXG4gIG1heC13aWR0aDogODAlO1xyXG59XHJcblxyXG4jcGFnIHtcclxuICBtYXgtd2lkdGg6IDUwJTtcclxufVxyXG5cclxuLm15LWJ1dHRvbiB7XHJcbiAgYm9yZGVyLXJhZGl1czogMjBweDtcclxuICBib3JkZXI6IG5vbmU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2NiMDBjNTtcclxufVxyXG5cclxuQG1lZGlhIChtYXgtd2lkdGg6IDYwMHB4KSB7XHJcbiAgI3RpdGxlIHtcclxuICAgIG1hcmdpbi10b3A6IC0xMDBweDtcclxuICB9XHJcbn1cclxuIl19 */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy9iYW5uZXIvYmFubmVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQixTQUFTO0VBQ1QsZUFBZTtFQUNmLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsWUFBWTtFQUNaLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFO0lBQ0Usa0JBQWtCO0VBQ3BCO0FBQ0Y7O0FBRUEsNHFDQUE0cUMiLCJzb3VyY2VzQ29udGVudCI6WyIuYmFubmVyIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBnYXA6IDMwcHg7XHJcbiAgcGFkZGluZzogMzBweCAwO1xyXG4gIG1hcmdpbi1ib3R0b206IDUwcHg7XHJcbn1cclxuXHJcbiNmb3RvIHtcclxuICBtYXgtd2lkdGg6IDQ1JTtcclxufVxyXG5cclxuI3RpdGxlIHtcclxuICBtYXJnaW4tdG9wOiAtMjAwcHg7XHJcbiAgbWF4LXdpZHRoOiA4MCU7XHJcbn1cclxuXHJcbiNwYWcge1xyXG4gIG1heC13aWR0aDogNTAlO1xyXG59XHJcblxyXG4ubXktYnV0dG9uIHtcclxuICBib3JkZXItcmFkaXVzOiAyMHB4O1xyXG4gIGJvcmRlcjogbm9uZTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjY2IwMGM1O1xyXG59XHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNjAwcHgpIHtcclxuICAjdGl0bGUge1xyXG4gICAgbWFyZ2luLXRvcDogLTEwMHB4O1xyXG4gIH1cclxufVxyXG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.carouselImage[_ngcontent-ng-c395232879] {
+  width: 100%;
+}
+
+img[_ngcontent-ng-c395232879] {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container[_ngcontent-ng-c395232879] {
+  background-color: pink-dark;
+  padding: 0 15px;
+}
+
+.title[_ngcontent-ng-c395232879] {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .title[_ngcontent-ng-c395232879] {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlcG9pbWVudG9zLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRTtJQUNFLGVBQWU7RUFDakI7QUFDRiIsImZpbGUiOiJkZXBvaW1lbnRvcy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcm91c2VsSW1hZ2Uge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG5pbWcge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIG9iamVjdC1maXQ6IGNvdmVyO1xyXG59XHJcblxyXG4uY29udGFpbmVyIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBwaW5rLWRhcms7XHJcbiAgcGFkZGluZzogMCAxNXB4O1xyXG59XHJcblxyXG4udGl0bGUge1xyXG4gIGZvbnQtd2VpZ2h0OiA2MDA7XHJcbiAgZm9udC1zaXplOiAycmVtO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBtYXJnaW4tYm90dG9tOiAxNXB4O1xyXG59XHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNjAwcHgpIHtcclxuICAudGl0bGUge1xyXG4gICAgZm9udC1zaXplOiAxcmVtO1xyXG4gIH1cclxufVxyXG4iXX0= */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy9kZXBvaW1lbnRvcy9kZXBvaW1lbnRvcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztBQUNiOztBQUVBO0VBQ0UsV0FBVztFQUNYLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLDJCQUEyQjtFQUMzQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0U7SUFDRSxlQUFlO0VBQ2pCO0FBQ0Y7O0FBRUEsNDlCQUE0OUIiLCJzb3VyY2VzQ29udGVudCI6WyIuY2Fyb3VzZWxJbWFnZSB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbmltZyB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgb2JqZWN0LWZpdDogY292ZXI7XHJcbn1cclxuXHJcbi5jb250YWluZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHBpbmstZGFyaztcclxuICBwYWRkaW5nOiAwIDE1cHg7XHJcbn1cclxuXHJcbi50aXRsZSB7XHJcbiAgZm9udC13ZWlnaHQ6IDYwMDtcclxuICBmb250LXNpemU6IDJyZW07XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIG1hcmdpbi1ib3R0b206IDE1cHg7XHJcbn1cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gIC50aXRsZSB7XHJcbiAgICBmb250LXNpemU6IDFyZW07XHJcbiAgfVxyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.circle[_ngcontent-ng-c2012063064] {
+  border-radius: 50%;
+  width: 150px;
+  height: 600px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.circle-mobile[_ngcontent-ng-c2012063064] {
+  border-radius: 50%;
+  object-fit: cover;
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+}
+
+.circle[_ngcontent-ng-c2012063064]   img[_ngcontent-ng-c2012063064] {
+  bottom: 0;
+  width: 100%;
+}
+
+.text-small[_ngcontent-ng-c2012063064] {
+  font-size: 0.5rem;
+}
+
+.margin-200[_ngcontent-ng-c2012063064] {
+  z-index: -1;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcmVzZW50YWNhby5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0VBQ2xCLFlBQVk7RUFDWixhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsV0FBVztFQUNYLGFBQWE7RUFDYixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxTQUFTO0VBQ1QsV0FBVztBQUNiOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsV0FBVztBQUNiIiwiZmlsZSI6ImFwcmVzZW50YWNhby5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNpcmNsZSB7XHJcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gIHdpZHRoOiAxNTBweDtcclxuICBoZWlnaHQ6IDYwMHB4O1xyXG4gIG9iamVjdC1maXQ6IGNvdmVyO1xyXG4gIG92ZXJmbG93OiBoaWRkZW47XHJcbn1cclxuXHJcbi5jaXJjbGUtbW9iaWxlIHtcclxuICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgb2JqZWN0LWZpdDogY292ZXI7XHJcbiAgd2lkdGg6IGF1dG87XHJcbiAgaGVpZ2h0OiAzMDBweDtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG59XHJcblxyXG4uY2lyY2xlIGltZyB7XHJcbiAgYm90dG9tOiAwO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG4udGV4dC1zbWFsbCB7XHJcbiAgZm9udC1zaXplOiAwLjVyZW07XHJcbn1cclxuXHJcbi5tYXJnaW4tMjAwIHtcclxuICB6LWluZGV4OiAtMTtcclxufVxyXG4iXX0= */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy9hcHJlc2VudGFjYW8vYXByZXNlbnRhY2FvLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsYUFBYTtFQUNiLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLFNBQVM7RUFDVCxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxXQUFXO0FBQ2I7O0FBRUEsNGpDQUE0akMiLCJzb3VyY2VzQ29udGVudCI6WyIuY2lyY2xlIHtcclxuICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgd2lkdGg6IDE1MHB4O1xyXG4gIGhlaWdodDogNjAwcHg7XHJcbiAgb2JqZWN0LWZpdDogY292ZXI7XHJcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcclxufVxyXG5cclxuLmNpcmNsZS1tb2JpbGUge1xyXG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICBvYmplY3QtZml0OiBjb3ZlcjtcclxuICB3aWR0aDogYXV0bztcclxuICBoZWlnaHQ6IDMwMHB4O1xyXG4gIG92ZXJmbG93OiBoaWRkZW47XHJcbn1cclxuXHJcbi5jaXJjbGUgaW1nIHtcclxuICBib3R0b206IDA7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi50ZXh0LXNtYWxsIHtcclxuICBmb250LXNpemU6IDAuNXJlbTtcclxufVxyXG5cclxuLm1hcmdpbi0yMDAge1xyXG4gIHotaW5kZXg6IC0xO1xyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.carouselImage[_ngcontent-ng-c3209450807] {
+  width: 100%;
+}
+
+img[_ngcontent-ng-c3209450807] {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container[_ngcontent-ng-c3209450807] {
+  background-color: pink-dark;
+  padding: 0 15px;
+}
+
+.title[_ngcontent-ng-c3209450807] {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .title[_ngcontent-ng-c3209450807] {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJlc3VsdGFkb3MtYWx1bmFzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFO0lBQ0UsZUFBZTtFQUNqQjtBQUNGIiwiZmlsZSI6InJlc3VsdGFkb3MtYWx1bmFzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2Fyb3VzZWxJbWFnZSB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbmltZyB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgb2JqZWN0LWZpdDogY292ZXI7XHJcbn1cclxuXHJcbi5jb250YWluZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHBpbmstZGFyaztcclxuICBwYWRkaW5nOiAwIDE1cHg7XHJcbn1cclxuXHJcbi50aXRsZSB7XHJcbiAgZm9udC1zaXplOiAycmVtO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBtYXJnaW4tYm90dG9tOiAxNXB4O1xyXG59XHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNjAwcHgpIHtcclxuICAudGl0bGUge1xyXG4gICAgZm9udC1zaXplOiAxcmVtO1xyXG4gIH1cclxufVxyXG4iXX0= */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy9yZXN1bHRhZG9zLWFsdW5hcy9yZXN1bHRhZG9zLWFsdW5hcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztBQUNiOztBQUVBO0VBQ0UsV0FBVztFQUNYLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLDJCQUEyQjtFQUMzQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRTtJQUNFLGVBQWU7RUFDakI7QUFDRjs7QUFFQSw0N0JBQTQ3QiIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJvdXNlbEltYWdlIHtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuaW1nIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBvYmplY3QtZml0OiBjb3ZlcjtcclxufVxyXG5cclxuLmNvbnRhaW5lciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcGluay1kYXJrO1xyXG4gIHBhZGRpbmc6IDAgMTVweDtcclxufVxyXG5cclxuLnRpdGxlIHtcclxuICBmb250LXNpemU6IDJyZW07XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIG1hcmdpbi1ib3R0b206IDE1cHg7XHJcbn1cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gIC50aXRsZSB7XHJcbiAgICBmb250LXNpemU6IDFyZW07XHJcbiAgfVxyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.padding-max[_ngcontent-ng-c4059441621] {
+  padding: 0 15vw;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhcmFxdWVtLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxlQUFlO0FBQ2pCIiwiZmlsZSI6InBhcmFxdWVtLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucGFkZGluZy1tYXgge1xyXG4gIHBhZGRpbmc6IDAgMTV2dztcclxufVxyXG4iXX0= */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy9wYXJhcXVlbS9wYXJhcXVlbS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQSx3VEFBd1QiLCJzb3VyY2VzQ29udGVudCI6WyIucGFkZGluZy1tYXgge1xyXG4gIHBhZGRpbmc6IDAgMTV2dztcclxufVxyXG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb250ZXVkby5jb21wb25lbnQuY3NzIn0= */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy9jb250ZXVkby9jb250ZXVkby5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQSxvS0FBb0siLCJzb3VyY2VSb290IjoiIn0= */</style><style>/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJnYXJhbnRpYS5jb21wb25lbnQuY3NzIn0= */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy9nYXJhbnRpYS9nYXJhbnRpYS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQSxvS0FBb0siLCJzb3VyY2VSb290IjoiIn0= */</style><style type="text/css"></style></head>
+<body>
+  <app-root _nghost-ng-c655452060="" ng-version="16.0.5"><app-banner _ngcontent-ng-c655452060="" _nghost-ng-c4078099929=""><div _ngcontent-ng-c4078099929="" class="banner"><img _ngcontent-ng-c4078099929="" src="./LrSite_files/teste.png" alt="" id="foto"><img _ngcontent-ng-c4078099929="" src="./LrSite_files/titulo.png" alt="" id="title" class="img-title"><button _ngcontent-ng-c4078099929="" class="bg-pink-800 hover:bg-pink-900 text-white font-bold py-2 px-4 rounded-full">INCREVA-SE</button><img _ngcontent-ng-c4078099929="" src="./LrSite_files/1641111741-435001-1687-32fc66fb45503d6529bf15af3ad91427 .png" alt="" id="pag" class="pagamento"></div></app-banner><app-depoimentos _ngcontent-ng-c655452060="" _nghost-ng-c395232879=""><div _ngcontent-ng-c395232879="" class="title fs-1 fw-bold"> FAÇA COMO <span _ngcontent-ng-c395232879="" class="text-pink-800">VÁRIAS DE MULHERES</span> COMUNS QUE SAIRAM DO ZERO E CONQUISTARAM A SUA INDEPENDÊNCIA SE TORNANDO UMA NAIL DESIGNER DE SUCESSO
+</div><ngb-carousel _ngcontent-ng-c395232879="" tabindex="0" class="carousel slide" aria-activedescendant="slide-ngb-slide-0" style="display: block;"><div role="tablist" class="carousel-indicators"><button type="button" data-bs-target="" role="tab" class="active" aria-labelledby="slide-ngb-slide-0" aria-controls="slide-ngb-slide-0" aria-selected="true"></button><button type="button" data-bs-target="" role="tab" aria-labelledby="slide-ngb-slide-1" aria-controls="slide-ngb-slide-1" aria-selected="false" class=""></button><button type="button" data-bs-target="" role="tab" aria-labelledby="slide-ngb-slide-2" aria-controls="slide-ngb-slide-2" aria-selected="false" class=""></button><button type="button" data-bs-target="" role="tab" aria-labelledby="slide-ngb-slide-3" aria-controls="slide-ngb-slide-3" aria-selected="false" class=""></button><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div><div class="carousel-inner"><div role="tabpanel" class="carousel-item active" id="slide-ngb-slide-0"><span class="visually-hidden"> Slide 1 of 4 </span><img _ngcontent-ng-c395232879="" alt="Random first slide" src="./LrSite_files/700-900x500.jpg"><!--bindings={
+  "ng-reflect-ng-template-outlet": "[object Object]"
+}--></div><div role="tabpanel" class="carousel-item" id="slide-ngb-slide-1"><span class="visually-hidden"> Slide 2 of 4 </span><img _ngcontent-ng-c395232879="" alt="Random second slide" src="./LrSite_files/533-900x500.jpg"><!--bindings={
+  "ng-reflect-ng-template-outlet": "[object Object]"
+}--></div><div role="tabpanel" class="carousel-item" id="slide-ngb-slide-2"><span class="visually-hidden"> Slide 3 of 4 </span><img _ngcontent-ng-c395232879="" alt="Random third slide" src="./LrSite_files/807-900x500.jpg"><!--bindings={
+  "ng-reflect-ng-template-outlet": "[object Object]"
+}--></div><div role="tabpanel" class="carousel-item" id="slide-ngb-slide-3"><span class="visually-hidden"> Slide 4 of 4 </span><img _ngcontent-ng-c395232879="" alt="Random fourth slide" src="./LrSite_files/124-900x500.jpg"><!--bindings={
+  "ng-reflect-ng-template-outlet": "[object Object]"
+}--></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div><button type="button" class="carousel-control-prev"><span aria-hidden="true" class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><button type="button" class="carousel-control-next"><span aria-hidden="true" class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--></ngb-carousel><!--bindings={
+  "ng-reflect-ng-if": "https://picsum.photos/id/700/9"
+}--></app-depoimentos><app-apresentacao _ngcontent-ng-c655452060="" _nghost-ng-c2012063064=""><div _ngcontent-ng-c2012063064="" class="container p-0 mt-10"><div _ngcontent-ng-c2012063064="" class="row justify-content-center"><div _ngcontent-ng-c2012063064="" class="row circle-mobile justify-content-center"><img _ngcontent-ng-c2012063064="" src="./LrSite_files/photo.png" alt=""></div><div _ngcontent-ng-c2012063064="" class="row"><div _ngcontent-ng-c2012063064="" class="text-center mt-10"><span _ngcontent-ng-c2012063064="" class="fs-5 fw-bold"><span _ngcontent-ng-c2012063064="" class="text-pink-800">LETÍCIA</span> REIMCHE</span></div><div _ngcontent-ng-c2012063064="" class="text-justify"> Muito prazer, me chamo Laila Barros e trabalho como nail designer desde os 14 anos de idade, aos 16 anos eu já tinha o meu próprio espaço e uma cartela de clientes fixas. Graças a essa profissão eu mudei a minha realidade e conquistei a minha independência financeira mesmo sendo muito nova. E depois de anos nessa profissão, resolvi ajudar outras mulheres a iniciarem no mundo das unhas e com a minha metodologia de ensino formei mais de 1500 alunas em todo o Brasil e será um prazer ser a sua professora nessa jornada. </div></div></div><div _ngcontent-ng-c2012063064="" class="row mt-20 bg-pink-800/50 justify-content-center margin-200"><div _ngcontent-ng-c2012063064="" class="row mt-10 mb-10"><span _ngcontent-ng-c2012063064="" class="fs-3 fw-bold text-center">APRENDA DE CASA COM UM MÉTODO PRÁTICO E VALIDADO</span></div><div _ngcontent-ng-c2012063064="" class="row justify-content-center fw-medium"><div _ngcontent-ng-c2012063064="" class="row justify-content-center p-4"><div _ngcontent-ng-c2012063064="" class="row justify-content-center"> PASSO A PASSO </div><div _ngcontent-ng-c2012063064="" class="row text-center"> Todo o conteúdo tem uma didática simples e fácil para qualquer pessoa conseguir aprender. </div></div><div _ngcontent-ng-c2012063064="" class="row justify-content-center p-4"><div _ngcontent-ng-c2012063064="" class="row justify-content-center"> TÉCNICAS PROFISSIONAIS </div><div _ngcontent-ng-c2012063064="" class="row text-center"> Você aprenderá as melhores técnicas para usar nas suas clientes. </div></div><div _ngcontent-ng-c2012063064="" class="row justify-content-center p-4"><div _ngcontent-ng-c2012063064="" class="row justify-content-center"> CERTIFICAÇÃO </div><div _ngcontent-ng-c2012063064="" class="row text-center"> No final do treinamento você receberá um certificado profissional para comprovar sua profissão. </div></div><div _ngcontent-ng-c2012063064="" class="row justify-content-center p-4"><div _ngcontent-ng-c2012063064="" class="row justify-content-center"> AGENDA CHEIA </div><div _ngcontent-ng-c2012063064="" class="row text-center"> Com todas as técnicas e estratégias do treinamento você conseguirá encher a sua agenda de clientes fiéis. </div></div></div></div></div></app-apresentacao><app-resultados-alunas _ngcontent-ng-c655452060="" _nghost-ng-c3209450807=""><div _ngcontent-ng-c3209450807="" class="mt-20 fs-1 fw-bold text-center"> É REALMENTE POSSÍVEL APRENDER <span _ngcontent-ng-c3209450807="" class="text-pink-800">NAIL DESIGNER ONLINE?</span></div><div _ngcontent-ng-c3209450807="" class="fs-3 fw-light mb-10 text-center"> A resposta é: Sim! Dá uma olhada no resultado do trabalho das minhas alunas.
+</div><ngb-carousel _ngcontent-ng-c3209450807="" tabindex="0" class="carousel slide" aria-activedescendant="slide-ngb-slide-4" style="display: block;"><div role="tablist" class="carousel-indicators"><button type="button" data-bs-target="" role="tab" class="active" aria-labelledby="slide-ngb-slide-4" aria-controls="slide-ngb-slide-4" aria-selected="true"></button><button type="button" data-bs-target="" role="tab" aria-labelledby="slide-ngb-slide-5" aria-controls="slide-ngb-slide-5" aria-selected="false" class=""></button><button type="button" data-bs-target="" role="tab" aria-labelledby="slide-ngb-slide-6" aria-controls="slide-ngb-slide-6" aria-selected="false" class=""></button><button type="button" data-bs-target="" role="tab" aria-labelledby="slide-ngb-slide-7" aria-controls="slide-ngb-slide-7" aria-selected="false" class=""></button><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div><div class="carousel-inner"><div role="tabpanel" class="carousel-item active" id="slide-ngb-slide-4"><span class="visually-hidden"> Slide 1 of 4 </span><img _ngcontent-ng-c3209450807="" alt="Random first slide" src="./LrSite_files/700-900x500.jpg"><!--bindings={
+  "ng-reflect-ng-template-outlet": "[object Object]"
+}--></div><div role="tabpanel" class="carousel-item" id="slide-ngb-slide-5"><span class="visually-hidden"> Slide 2 of 4 </span><img _ngcontent-ng-c3209450807="" alt="Random second slide" src="./LrSite_files/533-900x500.jpg"><!--bindings={
+  "ng-reflect-ng-template-outlet": "[object Object]"
+}--></div><div role="tabpanel" class="carousel-item" id="slide-ngb-slide-6"><span class="visually-hidden"> Slide 3 of 4 </span><img _ngcontent-ng-c3209450807="" alt="Random third slide" src="./LrSite_files/807-900x500.jpg"><!--bindings={
+  "ng-reflect-ng-template-outlet": "[object Object]"
+}--></div><div role="tabpanel" class="carousel-item" id="slide-ngb-slide-7"><span class="visually-hidden"> Slide 4 of 4 </span><img _ngcontent-ng-c3209450807="" alt="Random fourth slide" src="./LrSite_files/124-900x500.jpg"><!--bindings={
+  "ng-reflect-ng-template-outlet": "[object Object]"
+}--></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div><button type="button" class="carousel-control-prev"><span aria-hidden="true" class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><button type="button" class="carousel-control-next"><span aria-hidden="true" class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--></ngb-carousel><!--bindings={
+  "ng-reflect-ng-if": "https://picsum.photos/id/700/9"
+}--></app-resultados-alunas><app-paraquem _ngcontent-ng-c655452060="" _nghost-ng-c4059441621=""><div _ngcontent-ng-c4059441621="" class="container p-0 mt-10 pb-10"><div _ngcontent-ng-c4059441621="" class="row mt-20 pb-20 bg-black/50 justify-content-center margin-200"><div _ngcontent-ng-c4059441621="" class="row mt-10 mb-10 fw-medium"><span _ngcontent-ng-c4059441621="" class="fs-3 fw-bold text-center">PARA QUEM É O NAIL DESIGNER NA PRÁTICA?</span></div><div _ngcontent-ng-c4059441621="" class="fs-4 d-flex align-items-center px-4"><i _ngcontent-ng-c4059441621="" class="bi bi-check-lg mr-3"></i> Para mulheres que querem conquistar a independência financeira </div><div _ngcontent-ng-c4059441621="" class="fs-4 d-flex align-items-center px-4"><i _ngcontent-ng-c4059441621="" class="bi bi-check-lg mr-3"></i> Para mulheres que querem ter o próprio negócio </div><div _ngcontent-ng-c4059441621="" class="fs-4 d-flex align-items-center px-4"><i _ngcontent-ng-c4059441621="" class="bi bi-check-lg mr-3"></i> Para quem já trabalha com nails e deseja melhorar seus serviços </div><div _ngcontent-ng-c4059441621="" class="fs-4 d-flex align-items-center px-4"><i _ngcontent-ng-c4059441621="" class="bi bi-check-lg mr-3"></i> Para mulheres que querem ser bem pagas e reconhecidas profissionalmente </div><div _ngcontent-ng-c4059441621="" class="fs-4 d-flex align-items-center px-4"><i _ngcontent-ng-c4059441621="" class="bi bi-check-lg mr-3"></i> Para mulheres que não sabem NADA sobre a profissão mas desejam se tornar uma nail designer profissional. </div><div _ngcontent-ng-c4059441621="" class="row mt-10 mb-10 fw-medium"><span _ngcontent-ng-c4059441621="" class="fs-4 fw-light text-center">Você se identificou com algum dos itens acima? Então esse método é ideal para você!</span></div><button _ngcontent-ng-c4059441621="" class="bg-pink-800 hover:bg-pink-900 text-white font-bold py-2 px-4 rounded-full w-50">INCREVA-SE</button></div></div></app-paraquem><app-conteudo _ngcontent-ng-c655452060="" _nghost-ng-c1682918658=""><div _ngcontent-ng-c1682918658="" class="container p-0 mt-10"><div _ngcontent-ng-c1682918658="" class="row mt-20 pb-20 bg-white justify-content-center margin-200 text-black"><div _ngcontent-ng-c1682918658="" class="row mt-10 mb-10 fw-medium text-center"><span _ngcontent-ng-c1682918658="" class="fs-3 fw-bold text-center">O QUE VOCÊ VAI <span _ngcontent-ng-c1682918658="" class="text-pink-800">APRENDER?</span></span><div _ngcontent-ng-c1682918658="" class="fs-5"> Veja os módulos do curso </div></div><div _ngcontent-ng-c1682918658="" class="row justify-content-center"><div _ngcontent-ng-c1682918658="" class="col flex justify-center mb-7"><div _ngcontent-ng-c1682918658="" class="card drop-shadow-md h-60" style="width: 18rem;"><div _ngcontent-ng-c1682918658="" class="card-body"><h5 _ngcontent-ng-c1682918658="" class="card-title text-center fw-bold text-pink-800">Boas vindas!</h5><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Boas vindas</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Minha experiência</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Suporte e grupo telegram</p></div></div></div><div _ngcontent-ng-c1682918658="" class="col flex justify-center mb-7"><div _ngcontent-ng-c1682918658="" class="card drop-shadow-md h-60" style="width: 18rem;"><div _ngcontent-ng-c1682918658="" class="card-body"><h5 _ngcontent-ng-c1682918658="" class="card-title text-center fw-bold text-pink-800">Fundamentos Teóricos</h5><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Introdução</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Aprendendo sobre as unhas</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Crescimento das unhas</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Problemas das unhas</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Anatomia das unhas</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Espressura das unhas</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Diferença entre retirada e batidas</p></div></div></div><div _ngcontent-ng-c1682918658="" class="col flex justify-center mb-7"><div _ngcontent-ng-c1682918658="" class="card drop-shadow-md h-60" style="width: 18rem;"><div _ngcontent-ng-c1682918658="" class="card-body"><h5 _ngcontent-ng-c1682918658="" class="card-title text-center fw-bold text-pink-800">Boas práticas</h5><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Avisos para a cliente</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Boas práticas da profissional</p></div></div></div></div><div _ngcontent-ng-c1682918658="" class="row"><div _ngcontent-ng-c1682918658="" class="col flex justify-center mb-7"><div _ngcontent-ng-c1682918658="" class="card drop-shadow-md h-60" style="width: 18rem;"><div _ngcontent-ng-c1682918658="" class="card-body"><h5 _ngcontent-ng-c1682918658="" class="card-title text-center fw-bold text-pink-800">Materiais e Equipamentos</h5><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Materiais e Equipamentos</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Tipos de cabines</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Tipos de motor</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Preparadores</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Géis</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Utensilios gerais</p></div></div></div><div _ngcontent-ng-c1682918658="" class="col flex justify-center mb-7"><div _ngcontent-ng-c1682918658="" class="card drop-shadow-md h-60" style="width: 18rem;"><div _ngcontent-ng-c1682918658="" class="card-body"><h5 _ngcontent-ng-c1682918658="" class="card-title text-center fw-bold text-pink-800">Aplicação na prática</h5><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Preparação da fibra</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Preparação da unha</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Aplicação da fibra</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Lixamento</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Selagem e finalização</p></div></div></div><div _ngcontent-ng-c1682918658="" class="col flex justify-center mb-7"><div _ngcontent-ng-c1682918658="" class="card drop-shadow-md h-60" style="width: 18rem;"><div _ngcontent-ng-c1682918658="" class="card-body"><h5 _ngcontent-ng-c1682918658="" class="card-title text-center fw-bold text-pink-800">Bonus</h5><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Manutenções</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Remoção</p><p _ngcontent-ng-c1682918658="" class="card-text"><span _ngcontent-ng-c1682918658="" class="text-pink-800 fw-bold">- </span>Perguntas frequentes</p></div></div></div></div></div></div></app-conteudo><app-garantia _ngcontent-ng-c655452060="" _nghost-ng-c4109554490=""><div _ngcontent-ng-c4109554490="" class="container p-0 mt-20"><div _ngcontent-ng-c4109554490="" class="col"><div _ngcontent-ng-c4109554490="" class="col d-flex flex-col justify-center"><div _ngcontent-ng-c4109554490="" class="fs-1 fw-bold text-center"><span _ngcontent-ng-c4109554490="" class="text-pink-800">SATISFAÇÃO GARANTIDA</span><p _ngcontent-ng-c4109554490=""> OU SEU DINHEIRO DE VOLTA!</p></div><br _ngcontent-ng-c4109554490=""><br _ngcontent-ng-c4109554490=""><div _ngcontent-ng-c4109554490="" class="text-justify"> Você não tem nenhum risco! Eu assumi todo e qualquer risco que você poderia ter e estou liberando 7 dias de garantia INCONDICIONAL para você estudar, testar e praticar as técnicas do treinamento. <br _ngcontent-ng-c4109554490=""><br _ngcontent-ng-c4109554490=""><p _ngcontent-ng-c4109554490="">E se em 7 dias você se arrepender, basta enviar um email e eu devolvo 100% do seu dinheiro.</p></div></div><div _ngcontent-ng-c4109554490="" class="flex justify-end max-w-xs"><img _ngcontent-ng-c4109554490="" src="./LrSite_files/selo-garantia-7-dias-pe80dmcg6mfxu8vzuqin556sbxh3rc55hmq54psr5w.png" alt=""></div></div></div></app-garantia></app-root>
+<script src="./LrSite_files/runtime.js.baixados" type="module"></script><script src="./LrSite_files/polyfills.js.baixados" type="module"></script><script src="./LrSite_files/styles.js.baixados" defer=""></script><script src="./LrSite_files/vendor.js.baixados" type="module"></script><script src="./LrSite_files/main.js.baixados" type="module"></script>
+
+</body></html>

@@ -1,0 +1,28 @@
+.circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 600px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.circle-mobile {
+  border-radius: 50%;
+  object-fit: cover;
+  width: auto;
+  height: 300px;
+  overflow: hidden;
+}
+
+.circle img {
+  bottom: 0;
+  width: 100%;
+}
+
+.text-small {
+  font-size: 0.5rem;
+}
+
+.margin-200 {
+  z-index: -1;
+}

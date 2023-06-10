@@ -1,0 +1,33 @@
+<div class="container flex flex-col justify-center items-center mt-20">
+  <div class="flex flex-col mt-10 mb-10 fw-medium">
+    <span [classList]="isMobile?'fs-1 fw-bold text-center':'fs-1 fw-bold text-center '">NÃO FIQUE DE FORA!</span>
+    <span [classList]="isMobile?'fs-1 fw-bold text-center':'fs-1 fw-bold text-center '">INCREVA-SE!</span>
+  </div>
+  <div class="card drop-shadow-md bg-black/30 text-white w-9/12">
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit($event)">
+        <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Nome</label>
+          <input type="text" required class="form-control
+          border-none" [(ngModel)]="inscricao.name" name="name">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" required class="form-control" [(ngModel)]="inscricao.email" name="email" email>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Telefone</label>
+          <input class="form-control" required="true" id="exampleInputPassword1" [(ngModel)]="inscricao.phone"
+            name="phone" mask="(00) 00000-0000">
+        </div>
+        <div class="flex justify-center">
+          <button type="submit"
+            class="bg-pink-800 hover:bg-pink-900 text-white font-bold py-2 px-4 rounded-full w-full">INCREVA-SE</button>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+
+</div>
