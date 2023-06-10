@@ -23,10 +23,14 @@ body {
   max-width: 1300px;
   margin: auto;
   overflow-x: hidden;
+  overflow: hidden;
 }
 
 .collapse {
 }
 
 @media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
 }
