@@ -8,7 +8,7 @@
 }
 
 #foto {
-  max-width: 45%;
+  max-width: 50%;
 }
 
 #title {
@@ -20,14 +20,25 @@
   max-width: 50%;
 }
 
-.my-button {
-  border-radius: 20px;
-  border: none;
-  background-color: #cb00c5;
+button {
+  margin-top: -50px;
 }
 
 @media (max-width: 600px) {
   #title {
-    margin-top: -100px;
+    margin-top: -150px;
+    max-width: 120%;
+  }
+
+  #foto {
+    max-width: 80%;
+  }
+
+  #pag {
+    max-width: 80%;
+  }
+
+  button {
+    margin-top: -30px;
   }
 }
