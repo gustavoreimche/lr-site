@@ -28,6 +28,7 @@ button {
   #title {
     margin-top: -150px;
     max-width: 120%;
+    overflow: hidden;
   }
 
   #foto {
