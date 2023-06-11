@@ -26,3 +26,8 @@
 .margin-200 {
   z-index: -1;
 }
+
+.instagram {
+  width: max-content;
+  justify-content: center;
+}
