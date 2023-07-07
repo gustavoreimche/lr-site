@@ -1,1 +1,20 @@
-<p>pagamento works!</p>
+<script type="text/javascript">
+  function importHotmart() {
+    var imported = document.createElement('script');
+    imported.src = 'https://static.hotmart.com/checkout/widget.min.js';
+    document.head.appendChild(imported);
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css';
+    document.head.appendChild(link);
+  }
+  importHotmart();
+</script>
+<div class="flex justify-center my-6">
+  <a href="https://pay.hotmart.com/D78686645V?off=205jgg0x" target="_blank"
+    class="bg-pink-800 text-4xl w-full text-center hover:bg-pink-900 text-white font-bold py-2 px-4 rounded-full">COMPRAR
+    AGORA
+  </a>
+
+</div>
