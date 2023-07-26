@@ -9,6 +9,7 @@ import { DepoimentosComponent } from './components/depoimentos/depoimentos.compo
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import {
   NgbCarouselConfig,
   NgbCarouselModule,
@@ -26,6 +27,13 @@ import { PerguntasFrequentesComponent } from './components/perguntas-frequentes/
 import { PerguntasFooterComponent } from './components/perguntas-footer/perguntas-footer.component';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { BrazilComponent } from './components/flags/brazil.component';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 const maskConfig: Partial<IConfig> = {
   validation: false,
@@ -46,6 +54,7 @@ const maskConfig: Partial<IConfig> = {
     PagamentoComponent,
     PerguntasFrequentesComponent,
     PerguntasFooterComponent,
+    BrazilComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,10 +63,19 @@ const maskConfig: Partial<IConfig> = {
     NgbModule,
     NgbCarouselModule,
     FormsModule,
+    HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
     provideDatabase(() => getDatabase()),
     NgxMaskModule.forRoot(maskConfig),
+    TranslateModule.forRoot({
+      defaultLanguage: 'pt',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
   ],
   providers: [NgbCarouselConfig],
   bootstrap: [AppComponent],
