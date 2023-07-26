@@ -1,18 +1,16 @@
 <div class="container p-0 mt-20">
   <div [classList]="isMobile?'d-flex flex-col align-items-center':'d-flex flex-row gap-40 justify-content-center'">
     <div class="d-flex flex-col justify-center align-middle">
-      <div class="fs-1 fw-bold text-center">
-        <span class="text-pink-800">SATISFAÇÃO GARANTIDA</span>
-        <p> OU SEU DINHEIRO DE VOLTA!</p>
+      <div class="fs-1 fw-bold text-center uppercase">
+        <span> {{ 'satis' | translate }} </span>
+
       </div>
       <br />
       <br />
       <div class="text-justify">
-        Você não tem nenhum risco! Eu assumi todo e qualquer risco que você poderia ter e estou liberando 7 dias de
-        garantia
-        INCONDICIONAL para você estudar, testar e praticar as técnicas do treinamento. <br /><br />
+        {{ 'vcnao' | translate }} <br /><br />
 
-        <p>E se em 7 dias você se arrepender, basta enviar um email e eu devolvo 100% do seu dinheiro.</p>
+        <p> {{ 'ese' | translate }} </p>
       </div>
     </div>
     <div class="flex justify-center m-0">

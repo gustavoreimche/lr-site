@@ -1,46 +1,47 @@
 <div [classList]="isMobile ? 'container p-0 mt-10' : 'container p-0 mt-20'">
   <div class="row mt-20 pb-20 bg-white justify-content-center margin-200 text-black ">
     <div class="row mt-10 mb-10 fw-medium text-center">
-      <span [classList]="isMobile?'fs-3 fw-bold text-center':'fs-1 fw-bold text-center '">O QUE VOCÊ VAI <span
-          class="text-pink-800">APRENDER?</span></span>
+      <span [classList]="isMobile?'fs-3 fw-bold text-center':'fs-1 fw-bold text-center uppercase'"> {{ 'oquevaiaprender'
+        |
+        translate }} </span>
       <div class="fs-5">
-        Veja os módulos do curso
+        {{ 'vejaosmod' | translate }}
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col flex justify-center mb-7">
         <div class="card drop-shadow-md h-60" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title text-center fw-bold text-pink-800">Boas vindas!</h5>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Boas vindas</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Minha experiência</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Suporte e grupo telegram</p>
+            <h5 class="card-title text-center fw-bold text-pink-800"> {{ 'boasvindas' | translate }} </h5>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'boasvindas' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'minhaxp' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'suptel' | translate }} </p>
           </div>
         </div>
       </div>
       <div class="col flex justify-center  mb-7">
         <div class="card drop-shadow-md h-60 " style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title text-center fw-bold text-pink-800">Fundamentos Teóricos</h5>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Introdução</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Aprendendo sobre as unhas</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Crescimento das unhas</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Problemas das unhas</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Anatomia das unhas</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Espressura das unhas</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Diferença entre retirada e batidas</p>
+            <h5 class="card-title text-center fw-bold text-pink-800"> {{ 'fundteo' | translate }} </h5>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'intro' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'aprendendo' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'crescimento' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'problemas' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'anatomia' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'espessura' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'diff' | translate }} </p>
           </div>
         </div>
       </div>
       <div class="col flex justify-center  mb-7">
         <div class="card drop-shadow-md h-60" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title text-center fw-bold text-pink-800">Boas práticas</h5>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Avisos para a cliente</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Boas práticas como profissional</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Posicionamento em mesa</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Otimização de tempo</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Conhecimento básico e eficaz</p>
+            <h5 class="card-title text-center fw-bold text-pink-800"> {{ 'bp' | translate }} </h5>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'aviso' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'bpprof' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'pos' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'otimi' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'conhec' | translate }} </p>
           </div>
         </div>
       </div>
@@ -49,36 +50,36 @@
       <div class="col flex justify-center mb-7">
         <div class="card drop-shadow-md h-60" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title text-center fw-bold text-pink-800">Materiais e Equipamentos</h5>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Materiais e Equipamentos</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Tipos de cabines</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Tipos de motor</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Preparadores</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Géis</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Utensilios gerais</p>
+            <h5 class="card-title text-center fw-bold text-pink-800"> {{ 'mateqp' | translate }} </h5>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'mateqp' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'tpca' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'tpmo' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'prepa' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'geis' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'utg' | translate }} </p>
           </div>
         </div>
       </div>
       <div class="col flex justify-center mb-7">
         <div class="card drop-shadow-md h-60" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title text-center fw-bold text-pink-800">Aplicação na prática</h5>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Preparação da fibra</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Preparação da unha</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Aplicação da fibra</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Lixamento</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Selagem e finalização</p>
+            <h5 class="card-title text-center fw-bold text-pink-800"> {{ 'apnap' | translate }} </h5>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'prepf' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'prepu' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'apfi' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'lixa' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'sela' | translate }} </p>
           </div>
         </div>
       </div>
       <div class="col flex justify-center mb-7">
         <div class="card drop-shadow-md h-60" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title text-center fw-bold text-pink-800">Bônus</h5>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Manutenções</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Remoção</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Perguntas frequentes</p>
-            <p class="card-text"><span class="text-pink-800 fw-bold">- </span>Quanto posso cobrar?</p>
+            <h5 class="card-title text-center fw-bold text-pink-800"> {{ 'bonus' | translate }} </h5>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'man' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'rem' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'pergf' | translate }} </p>
+            <p class="card-text"><span class="text-pink-800 fw-bold">- </span> {{ 'quantopo' | translate }} </p>
           </div>
         </div>
       </div>
