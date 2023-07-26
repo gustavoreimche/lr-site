@@ -8,7 +8,7 @@
         <span [classList]="isMobile?'fs-5 fw-bold':'fs-1 fw-bold'"><span class="text-pink-800">LETÍCIA</span>
           REIMCHE</span>
       </div>
-      <div class="flex h-6 justify-evenly mt-4 mb-4">
+      <div class="images">
         <img src="./../../../assets/flags/baixados.png" alt="">
         <img src="./../../../assets/flags/equador.png" alt="">
         <img src="./../../../assets/flags/eua.png" alt="">
@@ -17,16 +17,7 @@
         <img src="./../../../assets/flags/uruguai.png" alt="">
       </div>
       <div [classList]="isMobile?'text-justify':'text-start fs-5'">
-        Muito prazer, me chamo Letícia Reimche estou profissionalmente na área Nails desde os meus 27 anos de idade,
-        inicialmente atendendo em casa e logo após em um Studio por porcentagem, no qual atuei por 3 meses já com agenda
-        cheia e
-        então abri meu próprio Studio que hoje está em atual expansão! Ministrei curso a primeira vez já em turma, em
-        2020 e
-        graça a essa profissão eu mudei minha realidade e conquistei minha independência financeira. Depois de muitas
-        especializações nacionais e internacionais resolvi alcançar outras mulheres e ajudá-las a iniciar no mundo das
-        unhas com
-        minha metodologia! Hoje são centenas de alunas formadas no BRASIL e URUGUAI, e convido você a começar essa
-        jornada.
+        {{ 'apresentacao' | translate }}
       </div>
       <div class="bg-red-700 text-center flex items-center justify-center fw-bold fs-5 rounded-full h-12 mt-5 instagram"
         style="cursor: pointer">
@@ -38,24 +29,25 @@
   </div>
   <div class="row mt-14 bg-pink-800/50 justify-content-center margin-200">
     <div class="row mt-10 mb-10">
-      <span [classList]="isMobile?'fs-3 fw-bold text-center':'fs-1 fw-bold text-center '">APRENDA DE CASA COM UM MÉTODO
-        PRÁTICO E VALIDADO</span>
+      <span [classList]="isMobile?'fs-3 fw-bold text-center uppercase':'fs-1 fw-bold text-center uppercase'"> {{
+        'aprenda' | translate }}
+      </span>
     </div>
     <div class="row justify-content-center fw-medium ">
       <div [classList]="isMobile?'row justify-content-center p-4':'col p-5'">
         <div class="row justify-content-center">
-          PASSO A PASSO
+          {{ 'passo' | translate }}
         </div>
         <div class="row text-center">
-          Todo o conteúdo tem uma didática simples e fácil para qualquer pessoa conseguir aprender.
+          {{ 'todo-conteudo' | translate }}
         </div>
       </div>
       <div [classList]="isMobile?'row justify-content-center p-4':'col p-5'">
         <div class="row justify-content-center">
-          TÉCNICAS PROFISSIONAIS
+          {{ 'tecnicas' | translate }}
         </div>
         <div class="row text-center">
-          Você aprenderá as melhores técnicas para usar nas suas clientes.
+          {{ 'voce-recebera' | translate}}
         </div>
       </div>
       <div [classList]="isMobile?'row justify-content-center p-4':'col p-5'">
@@ -63,7 +55,7 @@
           CERTIFICAÇÃO
         </div>
         <div class="row text-center">
-          No final do treinamento você receberá um certificado profissional para comprovar sua profissão.
+          {{ 'nofinal' | translate }}
         </div>
       </div>
       <div [classList]="isMobile?'row justify-content-center p-4':'col p-5'">
@@ -71,7 +63,7 @@
           AGENDA CHEIA
         </div>
         <div class="row text-center">
-          Com todas as técnicas e estratégias do treinamento você conseguirá encher a sua agenda de clientes fiéis.
+          {{ 'comtodas' | translate }}
         </div>
       </div>
     </div>

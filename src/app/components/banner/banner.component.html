@@ -1,4 +1,11 @@
 <div class="banner">
+  <div class="translate absolute top-6 right-6">
+    <span>Selecione um Idioma:</span>
+    <select name="translate" id="translate" [(ngModel)]="lang" (change)="changeLang()" class="bg-transparent">
+      <option value="pt">Português</option>
+      <option value="esp">Espanhol</option>
+    </select>
+  </div>
   <img src="./../../../assets/teste.png" alt="" id="foto">
   <img class="img-title" src="./../../../assets/titulo.png" alt="" id="title">
   <img class="pagamento" src="./../../../assets/1641111741-435001-1687-32fc66fb45503d6529bf15af3ad91427 .png" alt=""

@@ -26,3 +26,7 @@
 .margin-200 {
   z-index: -1;
 }
+
+.images {
+  @apply flex h-6 justify-evenly mt-4 mb-4;
+}
